@@ -17,7 +17,11 @@
     >
 
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link
+        href="{{ Vite::asset('resources/css/app.css') }}"
+        rel="stylesheet"
+    >
+    <script type="module" src="{{ Vite::asset('resources/js/app.js') }}"></script>
 
     <style>
         body {
